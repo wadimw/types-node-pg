@@ -4,6 +4,10 @@
 // `Error: Cannot find module 'stream/promises'`
 // https://nodejs.org/api/stream.html#streams-promises-api
 
+// because we're using @types/node@20 in this package,
+// this does NOT get flagged as build error,
+// but still results in runtime error!
+
 import { pipeline } from "stream/promises";
 
 import fs from "fs";

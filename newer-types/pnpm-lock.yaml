@@ -1,0 +1,47 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@tsconfig/node12':
+        specifier: ^12.1.4
+        version: 12.1.4
+      '@types/node':
+        specifier: '20'
+        version: 20.17.9
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
+packages:
+
+  '@tsconfig/node12@12.1.4':
+    resolution: {integrity: sha512-0KoYJG4IOL99qNFpQEyLJ8ZKQ+xBVBrgpN63Hepk2WHqt9wBggSRQltrzVxk4e1ZTnEFCs+8CGefr2hevDg9vg==}
+
+  '@types/node@20.17.9':
+    resolution: {integrity: sha512-0JOXkRyLanfGPE2QRCwgxhzlBAvaRdCNMcvbd7jFfpmD4eEXll7LRwy5ymJmyeZqk7Nh7eD2LeUyQ68BbndmXw==}
+
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
+snapshots:
+
+  '@tsconfig/node12@12.1.4': {}
+
+  '@types/node@20.17.9':
+    dependencies:
+      undici-types: 6.19.8
+
+  typescript@5.7.2: {}
+
+  undici-types@6.19.8: {}
